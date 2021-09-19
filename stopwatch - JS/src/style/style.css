@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.name {
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
+    right: 50%;
+    padding: 35px;
+    text-shadow: 0 0 5px #364F59;
+}
+
+.name h1 {
+    text-shadow: #364F59;
+    text-align: center;
+    font-family: 'Montserrat', monospace;
+    color: #F0F0F2;
+    font-size: 48px;
+}
+
+.conteudo {
+    background-color: #364F59;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 60px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #364F59;
+}
+
+.telaTemporizador {
+    position: relative;
+    width: 110%;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    left: -5%;
+    padding: 40px 0;
+    font-family: 'Roboto mono', monospace;
+    color: #F0F0F2;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #364F59;
+}
+
+.botoes {
+    width: 80%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    background-color: #F0F0F2;
+    color: #364F59;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.botoes button:hover {
+    color: #00d2ff;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
